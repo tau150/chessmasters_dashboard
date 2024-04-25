@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NotFound page > should match with snapshot 1`] = `
+<div
+  class="chakra-stack css-zliwli"
+>
+  <h2
+    class="chakra-heading css-1jygyfq"
+  >
+    404!
+  </h2>
+  <h2
+    class="chakra-heading css-0"
+  >
+    Something went wrong
+  </h2>
+  <p
+    class="chakra-text css-0"
+  >
+    The page you are looking for does not exist
+  </p>
+  <div
+    class="css-1fhgjcy"
+  >
+    <a
+      href="/"
+    >
+      <button
+        class="chakra-button css-4xx2wk"
+        type="button"
+      >
+        Go to home
+      </button>
+    </a>
+  </div>
+</div>
+`;

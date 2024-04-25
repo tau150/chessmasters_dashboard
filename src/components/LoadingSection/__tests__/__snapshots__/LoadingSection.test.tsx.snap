@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LoadingSection component > should render properly 1`] = `
+<div
+  class="chakra-stack css-zliwli"
+  data-testid="loading-section"
+>
+  <div
+    class="chakra-spinner css-11kyrpg"
+  >
+    <span
+      class="css-8b45rq"
+    >
+      Loading...
+    </span>
+  </div>
+  <h2
+    class="chakra-heading css-7akj9a"
+  >
+    Loading...
+  </h2>
+</div>
+`;
