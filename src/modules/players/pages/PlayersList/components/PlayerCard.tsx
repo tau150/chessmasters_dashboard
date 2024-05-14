@@ -1,10 +1,14 @@
-import { ReactElement } from "react";
+import { memo } from "react";
 import { Box, Card, CardBody } from "@chakra-ui/react";
 import { Link, generatePath } from "react-router-dom";
 import { ROUTES } from "@/routes/routes.types";
 
-export const mapPlayers = (players: string[]): ReactElement[] => {
-  return players.map((player) => (
+interface Props {
+  player: string;
+}
+
+export const PlayerCard = memo(({ player }: Props) => {
+  return (
     <Card
       key={player}
       as={Link}
@@ -15,5 +19,7 @@ export const mapPlayers = (players: string[]): ReactElement[] => {
       <Box bg="orange.200" borderTopRadius="10px" h="10px" />
       <CardBody>{player}</CardBody>
     </Card>
-  ));
-};
+  );
+});
+
+PlayerCard.displayName = "PlayerCard";

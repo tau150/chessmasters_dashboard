@@ -8,5 +8,6 @@ export const useGetPlayers = () => {
   return useQuery({
     queryFn: () => getAll(),
     queryKey: [QUERY_KEY],
+    staleTime: Infinity,
   });
 };
